@@ -8,8 +8,8 @@ You can return the answer in any order.
 
 💬 **Solution-1:**
 
-```
-    function twoSum(nums, target) {
+```js 
+function twoSum(nums, target) {
     const map = new Map();
     for (let i = 0; i < nums.length; i++) {
         const complement = target - nums[i];
@@ -28,4 +28,4 @@ const target = 9;
 const result = twoSum(nums, target);
 console.log(result); // Output: [0, 1]
 
-```js
+```
