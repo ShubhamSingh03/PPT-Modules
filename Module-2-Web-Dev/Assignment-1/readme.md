@@ -171,6 +171,6 @@ Example: `<a href="#"  title="Click me!">Link</a>`
 
 💬 **Solution-10:**
 
-## [Answer-10-Table-Github Code Link](https://github.com/ShubhamSingh03/Placement_Assignment-Ineuron/blob/main/HTML/answer-10-table.html)
+### [Answer-10-Table-Github Code Link](https://github.com/ShubhamSingh03/Placement_Assignment-Ineuron/blob/main/HTML/answer-10-table.html)
 
 <hr/>
