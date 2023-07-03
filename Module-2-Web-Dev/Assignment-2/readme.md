@@ -4,7 +4,6 @@
 
 💬 **Solution-1:** 
 
-```css
 The box model is a fundamental concept in CSS (Cascading Style Sheets) that describes how elements are rendered and displayed on a web page. It consists of several components that define the space occupied by an element, including its content, padding, border, and margin.
 
 The CSS properties associated with the box model are:
@@ -17,7 +16,6 @@ The CSS properties associated with the box model are:
 
   3.Margin: The space outside the border, which separates the element from other elements. Margins can be 
     set using the `margin` property or its shorthand properties like `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`.
-```
 
 <hr/>
 
@@ -25,7 +23,6 @@ The CSS properties associated with the box model are:
 
 💬 **Solution-2:**
 
-```css
 CSS selectors are used to target specific elements on a web page and apply styles to them. Here are some of the most commonly used types of selectors:
 
 1. Element selectors: They target elements based on their tag name. For example, the selector `h1` 
@@ -40,7 +37,6 @@ targets all `<h1>` elements. Element selectors have a broad scope and can be use
 5. Pseudo-class selectors: They target elements based on a particular state or condition. Pseudo-classes start with a colon (`:`). For example, the selector `:hover` targets an element when it is being hovered over by the mouse. Pseudo-class selectors are useful for creating interactive styles and applying styles to elements based on user interaction or element states.
 
 6. Pseudo-element selectors: They target specific parts of an element, such as the first line or first letter of a block of text. Pseudo-elements also start with a colon (`:`), but with two colons (`::`). For example, the selector `::first-line` targets the first line of a block of text. Pseudo-element selectors allow you to style specific parts of an element's content.
-```
 
 <hr/>
 
@@ -48,7 +44,6 @@ targets all `<h1>` elements. Element selectors have a broad scope and can be use
 
 💬 **Solution-3:**
 
-```
 VW (viewport width) and VH (viewport height) are units of measurement in CSS that allow you to specify sizes relative to the viewport dimensions. The viewport refers to the visible area of a web page in the browser window.
 
 Here's how VW and VH differ from PX (pixels):
@@ -59,8 +54,7 @@ Here's how VW and VH differ from PX (pixels):
 
 3. PX (Pixels): PX is an absolute unit of measurement that represents a specific number of pixels on the screen. Unlike VW and VH, which are relative units, PX provides an exact size regardless of the viewport dimensions. For example, setting an element's width to 200 pixels will always make it 200 pixels wide, regardless of the screen size or viewport dimensions.
 
-The main difference between VW/VH and PX is that VW and VH are relative units based on the viewport dimensions, while PX is an absolute unit based on a fixed pixel value
-```
+The main difference between VW/VH and PX is that VW and VH are relative units based on the viewport dimensions, while PX is an absolute unit based on a fixed pixel value.
 
 <hr/>
 
@@ -68,7 +62,6 @@ The main difference between VW/VH and PX is that VW and VH are relative units ba
 
 💬 **Solution-4:**
 
-```html
 The terms "inline," "inline-block," and "block" refer to the display property values in CSS, which determine how an element is rendered and how it interacts with other elements on the page. 
 
 1. Inline: An inline element is displayed within the flow of text and does not start on a new line. Examples of inline elements include `<span>`, `<a>`, and `<em>`. Inline elements do not have any width or height properties, and their dimensions are determined by their content. They do not create line breaks and can appear alongside other inline elements. Additionally, you cannot set margins, paddings, or vertical alignment (top or bottom) on inline elements.
@@ -76,7 +69,6 @@ The terms "inline," "inline-block," and "block" refer to the display property va
 2. Inline Block: An inline-block element is similar to an inline element in that it flows within the text, but it can have a width, height, margins, paddings, and vertical alignment properties. It combines characteristics of both inline and block elements. Inline-block elements start on the same line as other inline or inline-block elements, but they can have block-level properties and be styled as boxes. Examples of inline-block elements include `<img>`, `<button>`, and `<input>`. Inline-block elements can have a width and height defined, allowing them to have a specific size.
 
 3. Block: A block-level element starts on a new line and takes up the full available width of its parent container. Examples of block-level elements include `<div>`, `<p>`, and `<h1>` to `<h6>`. Block-level elements create a "block" of content and, by default, have a width of 100% of their parent container. They can have width, height, margins, paddings, and vertical alignment properties. Block-level elements create line breaks before and after them, causing subsequent content to appear on new lines.
-```
 
 <hr/>
 
@@ -84,7 +76,6 @@ The terms "inline," "inline-block," and "block" refer to the display property va
 
 💬 **Solution-5:**
 
-```
 The terms "border-box" and "content-box" refer to different box-sizing values in CSS, which determine how the width and height of an element are calculated and how the padding and border affect the element's size.
 
 1. Content Box (default): When an element has the box-sizing value set to "content-box," the width and height of the element are calculated based on the content area alone, excluding the padding and border.
@@ -94,8 +85,6 @@ This means that if you set a width of 300 pixels for an element with padding and
 2. Border-box: When an element has the box-sizing value set to "border-box," the width and height of the element include the content area, padding, and border. In this model, the specified width and height of the element represent the total size, and the padding and border are included within that size. This ensures that the element's overall size remains constant, regardless of the padding and border values.
 For example, setting a width of 300 pixels with padding and a border in the border-box model will result in the element fitting within that 300-pixel width, as the padding and border are deducted from the total width.
 
-```
-
 <hr/>
 
 
@@ -103,7 +92,6 @@ For example, setting a width of 300 pixels with padding and a border in the bord
 
 💬 **Solution-6:**
 
-```
 The z-index is a CSS property that controls the stacking order of positioned elements on a web page along the z-axis. It determines which elements appear in front of or behind other elements when they overlap in the two-dimensional plane.
 
 The z-index property accepts an integer value, where a higher value indicates a higher stacking order. Elements with a higher z-index will appear in front of elements with a lower z-index. If two elements have the same z-index, their stacking order will be determined by their order in the HTML markup, with the element that appears later in the markup being positioned on top.
@@ -121,7 +109,6 @@ Here's how the z-index property functions:
 5. Stacking Order Hierarchy: The stacking order is influenced by different factors such as the stacking context, the z-index value, and the parent-child relationship. Higher z-index values move elements closer to the user and place them on top of elements with lower z-index values. However, this order only applies within the same stacking context.
 
 Z-index property does not work on non-positioned (static) elements or elements with a CSS value of "fixed" that are removed from the normal document flow.
-```
 
 <hr/>
 
@@ -130,7 +117,6 @@ Z-index property does not work on non-positioned (static) elements or elements w
 
 💬 **Solution-7:**
 
-```
 Grid and Flexbox are two powerful layout systems in CSS that offer different approaches to creating responsive and flexible layouts.
 
 1. Flexbox (Flexible Box Layout):
@@ -171,7 +157,6 @@ Major differences between Grid and Flexbox:
 - Complexity: Grid Layout is generally more complex and versatile, allowing for intricate and multi-dimensional layouts. Flexbox is simpler and more suitable for basic one-dimensional layouts.
 
 - Support for older browsers: Flexbox has broader support among older browsers compared to Grid Layout, which has more limited support.
-```
 
 <hr/>
 
@@ -179,14 +164,13 @@ Major differences between Grid and Flexbox:
 
 💬 **Solution-8:**
 
-```css
-
 1. Absolute Positioning:
 An element with `position: absolute;` is positioned relative to its nearest positioned ancestor or to the initial containing block (the viewport if no positioned ancestor is found).
 It is taken out of the normal document flow, meaning other elements will not be affected by its position.
 
 Example:
 
+```css
 .parent {
   position: relative;
 }
@@ -196,9 +180,9 @@ Example:
    top: 50px;
   left: 20px;
 }
+```
 
 In this example, the `.absolute-element` will be positioned 50 pixels from the top and 20 pixels from the left of its nearest positioned ancestor (`.parent`).
-
 
 
 2. Relative Positioning:
@@ -207,14 +191,15 @@ It does not affect the position of other elements, and they will be positioned a
 
 Example:
 
+```css
 .relative-element {
    position: relative;
    top: 10px;
    left: 20px;
 }
+```
 
 In this example, the `.relative-element` will be positioned 10 pixels down and 20 pixels to the right of its normal position within the document flow.
-
 
 
 3. Sticky Positioning:
@@ -222,12 +207,14 @@ An element with `position: sticky;` is positioned based on its scroll position w
 It acts as `relative` until a specified offset threshold is reached, after which it becomes `fixed` and remains in a fixed position.
 Example:
 
+```css
 .sticky-element {
    position: sticky;
   top: 100px;
 }
-In this example, the `.sticky-element` will behave normally within the document flow until the user scrolls to a point where the element is 100 pixels from the top of the viewport. At that point, the element will become sticky and remain fixed at that position as the user continues scrolling.
+```
 
+In this example, the `.sticky-element` will behave normally within the document flow until the user scrolls to a point where the element is 100 pixels from the top of the viewport. At that point, the element will become sticky and remain fixed at that position as the user continues scrolling.
 
 
 4. Fixed Positioning:
@@ -236,16 +223,17 @@ It is taken out of the normal document flow, and other elements will not be affe
 
 Example:
 
+```css
 .fixed-element {
  position: fixed;
    top: 20px;
   right: 30px;
 }
+```
 
 In this example, the `.fixed-element` will remain fixed 20 pixels from the top and 30 pixels from the right of the viewport, regardless of scrolling.
 
 So the main difference between sticky and fixed positioning is that sticky elements become fixed only when a specific scroll position is reached, while fixed elements are always fixed relative to the viewport. Relative and absolute positioning are used within the normal document flow and differ in how they calculate the element's position, either relative to its closest positioned ancestor (absolute) or its default position (relative).
-```
 
 <hr/>
 
