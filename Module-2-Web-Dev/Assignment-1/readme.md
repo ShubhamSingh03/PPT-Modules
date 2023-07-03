@@ -53,7 +53,7 @@ For example, the following code represents an HTML element:
 
 `<h1>Welcome to my website</h1>`
 
-In this case, `<h1>` is the opening tag, "Welcome to my website" is the content, and </h1> is the closing tag. Together, they form an <h1> element that represents a heading in HTML.
+In this case, `<h1>` is the opening tag, "Welcome to my website" is the content, and </h1> is the closing tag. Together, they form an `<h1>` element that represents a heading in HTML.
 
 <hr/>
 
