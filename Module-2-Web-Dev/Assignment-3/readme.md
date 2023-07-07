@@ -184,12 +184,124 @@ Defined media query targets devices with a `landscape` orientation and applies s
 
 <hr/>
 
-💡 **Question-6:**
+💡 **Question-6:** Imagine you are a web developer working for a creative agency that specializes in building visually appealing and interactive websites. The agency has recently received a client request to create a landing page similar to the design of the one-page website: https://www.getonecard.app/. The client wants to showcase a video prominently on the page to engage visitors.
+
+Your task is to create a simple webpage that replicates the one-page landing page design, including a responsive layout and an HTML video. The below images are for your reference. Some browsers don’t allow you to play videos without the controls attribute. So, you can add controls here, we will learn how to play a video without the controls attribute in the later sections.
 
 💬 **Solution-6:** 
 
-```css
+![assignment-3-webdev-question-6-image](./images/assignment-3-webdev-question-6.png)
 
+**HTML**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneCard Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="video-container">
+      <video src="video.mp4" autoplay loop muted controls></video>
+    </div>
+  </section>
+
+  <section id="features">
+    <!-- Features content goes here -->
+  </section>
+
+  <section id="how-it-works">
+    <!-- How It Works content goes here -->
+  </section>
+</body>
+</html>
+```
+
+**CSS**
+
+```css
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+  height: 100vh;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px;
+  }
+}
 ```
 
 <hr/>
@@ -198,38 +310,249 @@ Defined media query targets devices with a `landscape` orientation and applies s
 
 💬 **Solution-7:** 
 
-```css
+**HTML**
 
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/12951465/pexels-photo-12951465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1">
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/17217441/pexels-photo-17217441/free-photo-of-long-exposure.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2">
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/17275242/pexels-photo-17275242/free-photo-of-city-art-landmark-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3">
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/3098970/pexels-photo-3098970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 4">
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/14761034/pexels-photo-14761034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 5">
+  </div>
+  <div class="gallery-item">
+    <img src="https://images.pexels.com/photos/11634032/pexels-photo-11634032.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 6">
+  </div>
+</div>
+</body>
+</html>
 ```
+
+**CSS**
+
+```css
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+```
+**Larger Screens:**
+
+![assignment-3-webdev-solution-7-image-1](./images/assignment-3-webdev-solution-7.png)
+
+**Smaller Screens:**
+
+![assignment-3-webdev-solution-7-image-2](./images/assignment-3-webdev-solution-7-image-2.png)
 
 <hr/>
 
-💡 **Question-8:**
+💡 **Question-8:** In this coding challenge, your task is to create an information section for the previously built OneCard webpage clone, focusing on the different modes like dark and light modes. The webpage should look different depending on the screen size: dark mode for larger screens and light mode for smaller devices.
 
 💬 **Solution-8:** 
 
-```css
+**HTML**
 
+```html
+<section class="information">
+  <div class="container">
+    <h2>No Hidden Fees Ever</h2>
+    <p>No Joining Fees</p>
+    <p>No Annual Fees</p>
+  </div>
+</section>
 ```
 
-<hr/>
-
-💡 **Question-9:**
-
-💬 **Solution-9:** 
+**CSS**
 
 ```css
+.information {
+  padding: 100px 0;
+}
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Dark mode styles for larger screens */
+@media (min-width: 600px) {
+  body {
+    background-color: #222;
+    color: #fff;
+  }
+
+  .information {
+    background-color: #333;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  p {
+    color: #ccc;
+  }
+}
+
+/* Light mode styles for smaller screens */
+@media (max-width: 599px) {
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  .information {
+    background-color: #fff;
+  }
+}
 ```
-
 <hr/>
 
-💡 **Question-10:**
+
+💡 **Question-10:** You have been given to create a student dashboard page that includes a student details table. The challenge lies in handling the table's display on different screen sizes. On large screens, the table should be fully visible, while on small screens, it should have an internal scroll to ensure proper visibility of information. Refer to the attached images for visual reference.
 
 💬 **Solution-10:** 
 
-```css
+![assignment-3-question-10-webdev-image](./images/assignment-3-question-10-webdev.png)
 
+**HTML**
+
+```html
+<div class="dashboard">
+  <table class="student-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone No.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Rahul Sharma</td> <td>rahul.sharma@example.com</td> <td>1234567890</td></tr>
+      <tr><td>Vivek Bindra</td> <td>vivek.bindra@example.com</td> <td>3432323890</td></tr>
+      <tr><td>Prita Patel</td> <td>prita.patel@example.com</td> <td>4348234984</td></tr>
+      <tr><td>Amit Saini</td> <td>amit.saini@example.com</td> <td>9852985222</td></tr>
+      <tr><td>Rahul Sharma</td> <td>rahul.sharma@example.com</td> <td>5482520852</td></tr>
+      <tr><td>Anita Desai</td> <td>anita.desai@example.com</td> <td>2343244884</td></tr>
+    </tbody>
+  </table>
+</div>
+
+```
+
+**CSS**
+
+```css
+.dashboard {
+  padding: 20px;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-table th,
+.student-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+  background-color: #f2f2f2;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .student-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  .student-table thead,
+  .student-table tbody,
+  .student-table th,
+  .student-table td,
+  .student-table tr {
+    display: block;
+  }
+
+  .student-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .student-table tbody tr {
+    border: 1px solid #ddd;
+  }
+
+  .student-table td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .student-table td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  .student-table td:nth-of-type(1):before {
+    content: "Name";
+  }
+
+  .student-table td:nth-of-type(2):before {
+    content: "Email";
+  }
+
+  .student-table td:nth-of-type(3):before {
+    content: "Phone No.";
+  }
+}
 ```
 
 <hr/>
