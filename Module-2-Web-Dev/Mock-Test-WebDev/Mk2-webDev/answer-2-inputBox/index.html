@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Entry App</title>
+</head>
+<body>
+  <input id="textInput" type="text">
+  <button id="submitButton">Submit</button>
+  <ul id="textList"></ul>
+
+  <script>
+    const textInput = document.getElementById('textInput');
+    const submitButton = document.getElementById('submitButton');
+    const textList = document.getElementById('textList');
+
+    submitButton.addEventListener('click', () => {
+      const enteredText = textInput.value;
+      if (enteredText.trim() !== '') {
+        const listItem = document.createElement('li');
+        listItem.textContent = enteredText;
+        textList.appendChild(listItem);
+        textInput.value = '';
+      }
+    });
+  </script>
+</body>
+</html>
