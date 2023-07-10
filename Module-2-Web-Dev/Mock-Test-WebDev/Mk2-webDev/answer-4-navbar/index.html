@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Navbar</title>
+  <style>
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar-brand {
+      font-size: 20px;
+    }
+
+    .navbar-menu {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar-menu-item {
+      padding: 10px;
+    }
+
+    /* Hamburger menu styles */
+    .navbar-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .navbar-toggle .bar {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin-bottom: 3px;
+      transition: background-color 0.3s;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+      }
+
+      .navbar-toggle {
+        display: flex;
+      }
+
+      .navbar-menu-mobile.show {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">Logo</div>
+
+    <div class="navbar-menu">
+      <a class="navbar-menu-item" href="#">Home</a>
+      <a class="navbar-menu-item" href="#">About</a>
+      <a class="navbar-menu-item" href="#">Services</a>
+      <a class="navbar-menu-item" href="#">Contact</a>
+    </div>
+
+    <div class="navbar-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const navbarMenu = document.querySelector('.navbar-menu');
+      navbarMenu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
