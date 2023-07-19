@@ -187,3 +187,224 @@ So, the product of the largest and smallest possible values of M is 0.
 ```
 
 <hr/>
+
+<hr/>
+
+## Unit digits (Cyclicity)
+
+💡 **Question-1:** ) What is the unit digit in the product (3<sup>65 </sup>x 6<sup>59 </sup>x 7<sup>71</sup>)?
+
+💬 **Solution-1:** Unit digit is **4**
+
+<hr/>
+
+💡 **Question-2:** Find unit digit of product (173)<sup>45</sup> x (152)<sup>77</sup> x (777)<sup>999</sup>
+
+💬 **Solution-2:** Unit digit is **8**
+
+<hr/>
+
+💡 **Question-3:** What is the unit's digit of the number 6<sup>256</sup>– 4<sup>256</sup>?
+
+💬 **Solution-3:** Unit digit is **0**
+
+<hr/>
+
+💡 **Question-4:** Find the unit's digit in 264<sup>102</sup>+ 264<sup>103</sup>
+
+💬 **Solution-4:** Unit digit is **0**
+
+<hr/>
+
+💡 **Question-5:** ) What is the unit digit of (316)<sup>3n</sup> + 1?
+
+💬 **Solution-5:** Unit digit is **7**
+
+<hr/>
+
+💡 **Question-6:** What is the unit digit in (7<sup>95</sup> - 3<sup>58</sup>)?
+
+💬 **Solution-6:** Unit digit is **4**
+
+<hr/>
+
+💡 **Question-7:** What is the rightmost non-zero digit of the number 30<sup>2720</sup>
+
+💬 **Solution-7:** Rightmost/Unit digit is **1**
+
+<hr/>
+
+💡 **Question-8:** What will be the last digit of the number obtained by multiplying the numbers 81x82x83x84x86x87x88x89?
+
+💬 **Solution-8:** Unit digit is **6**
+
+<hr/>
+
+💡 **Question-9:** Find the last three-digits of the product: 12345x54321
+
+💬 **Solution-9:** Last three-digits are **745**
+
+<hr/>
+
+💡 **Question-10:**  Find the last digit of 1<sup>5</sup>+2<sup>5</sup>+3<sup>5</sup>……9<sup>5</sup>
+
+💬 **Solution-10:** Unit digit is **5**
+
+<hr/>
+
+<hr/>
+
+## Remainders
+
+💡 **Question-1:** What is the remainder when 7<sup>25</sup> is divided by 6?
+
+💬 **Solution-1:**  Remainder is **1**
+
+<hr/>
+
+💡 **Question-2:**  What is the remainder when 3<sup>45</sup> is divided by 8?
+
+💬 **Solution-2:** Remainder is **3**
+
+<hr/>
+
+💡 **Question-3:** Find the remainder when 4<sup>96</sup> is divided by 6.
+
+💬 **Solution-3:** Remainder is **4**
+
+<hr/>
+
+💡 **Question-4:** What is the remainder when <sub>14</sub>15<sup>16</sup> is divided by 5?
+
+💬 **Solution-4:** Remainder is **1**
+
+<hr/>
+
+💡 **Question-5:** Find the remainder when 67<sup>99</sup>  is divided by 7.
+
+💬 **Solution-5:** Remainder is **1**
+
+<hr/>
+
+💡 **Question-6:** What is the remainder when 73x75x78x57x197x37 is divided by 34
+
+💬 **Solution-6:** Remainder is **32**
+
+<hr/>
+
+💡 **Question-7:** Let N = 1421x1423x1425. What is the remainder when N is divided by 12?
+
+💬 **Solution-7:** Remainder is **3**
+
+<hr/>
+
+💡 **Question-8:** Find the remainder when 2<sup>256</sup> is divided by 17.
+
+💬 **Solution-8:** Remainder is **1**
+
+<hr/>
+
+💡 **Question-9:** The remainder of 39<sup>97!</sup> /40 is :
+
+a) 39 b) 0 c) 1 d) None of these
+
+💬 **Solution-9:** Correct Option is  **C: 1**
+
+<hr/>
+
+💡 **Question-10:**  Find the remainder on dividing 1!+2!+3!.....+100! by 7?
+
+💬 **Solution-10:** Remainder is **5**
+
+<hr/>
+
+<hr/>
+
+## Factors
+
+💡 **Question-1:** What is the number of prime factors in 6<sup>4</sup>x8<sup>6</sup>x10<sup>8</sup>x14<sup>10</sup>x22<sup>12</sup>
+
+💬 **Solution-1:**  Number of prime factors in the expression is **5**, and the prime factors are 2, 3, 5, 7, and 11. Total prime factors = 52+4+8+10+12=**86**
+
+<hr/>
+
+💡 **Question-2:**  N= a<sup>4</sup>xb<sup>3</sup>xc<sup>7</sup>. Find the number of perfect square factors of N where a,b,c are three distinct prime numbers.
+
+💬 **Solution-2:**  There are **24** perfect square factors of N when a, b, and c are three distinct prime numbers.
+
+<hr/>
+
+💡 **Question-3:** How many factors of 12<sup>3</sup>x30<sup>4</sup>x35<sup>2</sup> are even numbers?
+
+💬 **Solution-3:**  There are **120** factors of N that are even numbers.
+
+<hr/>
+
+💡 **Question-4:** If N=2<sup>7</sup>×3<sup>4</sup>, M= 2<sup>4</sup>×3<sup>2</sup>×5, then find the number of factors of N that are common with the factors of M.
+
+💬 **Solution-4:**  There is only **one** factor of N that is common with the factors of M, and that factor is **144**.
+
+<hr/>
+
+💡 **Question-5:** N is the smallest number that has 5 factors. How many factors does (N - 1) have?
+
+💬 **Solution-5:** The number of factors that (N - 1) has is **4**.
+
+<hr/>
+
+💡 **Question-6:** If both 11<sup>2</sup> and 3<sup>4</sup> are factors of the number Ax4<sup>3</sup>x6<sup>2</sup>x13<sup>11</sup>, then what is the smallest possible value of A?
+
+💬 **Solution-6:**  The smallest possible value of A is **9801**.
+
+<hr/>
+
+💡 **Question-7:**  Find the total number of factors of 10!
+
+💬 **Solution-7:** 10! has a total of **270** factors.
+
+<hr/>
+
+💡 **Question-8:** How many factors of 2<sup>7</sup>x3<sup>6</sup>x5<sup>4</sup>x7<sup>3</sup> are even perfect squares?
+
+💬 **Solution-8:** There are **96** factors of N that are even perfect squares.
+
+<hr/>
+
+💡 **Question-9:**  In how many ways can 480 be written as a product of two natural numbers?
+
+💬 **Solution-9:** There are **24** ways to write 480 as a product of two natural numbers.
+The prime factorization of 480 is: 480 = 2<sup>5</sup> * 3 * 5
+
+Now, 24 pairs of factors are:
+1. (1, 480)
+2. (2, 240)
+3. (3, 160)
+4. (4, 120)
+5. (5, 96)
+6. (6, 80)
+7. (8, 60)
+8. (10, 48)
+9. (12, 40)
+10. (15, 32)
+11. (16, 30)
+12. (20, 24)
+13. (24, 20)
+14. (30, 16)
+15. (32, 15)
+16. (40, 12)
+17. (48, 10)
+18. (60, 8)
+19. (80, 6)
+20. (96, 5)
+21. (120, 4)
+22. (160, 3)
+23. (240, 2)
+24. (480, 1)
+
+<hr/>
+
+💡 **Question-10:** How many factors of 2<sup>5</sup>x3<sup>4</sup>x5<sup>4</sup> are not the factors of 2<sup>3</sup>x5<sup>4</sup>x7<sup>5</sup>.
+
+💬 **Solution-10:** There are **30** factors of 2<sup>5</sup>x3<sup>4</sup>x5<sup>4</sup> that are not factors of 2<sup>3</sup>x5<sup>4</sup>x7<sup>5</sup>.
+
+<hr/>
